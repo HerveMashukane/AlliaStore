@@ -18,5 +18,24 @@
         </div>
     </article>
 
-    
+    <!-- FAQ -->
+    <article class="grid grid-cols-1">
+        <div *ngFor="let faq of faqs">
+            <div>
+                <h2>
+                    {{ faq.question }}
+                    <span class="cursor-pointer" 
+                    [ngClass]="{'bi bi-minus':isExpanded, 'bi bi-plus':!isExpanded}"
+                    (click)="toggleExpanded()"></span>
+                </h2>
+                <p *ngIf="isExpanded">
+                    {{ faq.answer }}
+                </p>
+            </div>
+        </div>
+        <!-- image -->
+        <div>
+            <img src="/assets/images/allia.jpeg" alt="" class="w-96 h-96 shadow shadow-white">
+        </div>
+    </article>
 </main>
