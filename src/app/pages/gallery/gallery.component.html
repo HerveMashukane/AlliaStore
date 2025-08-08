@@ -7,8 +7,8 @@
     <!-- products -->
     <article class="grid grid-col mx-4 md:grid-cols-4 md:px-24 gap-8 pb-16">
         <div *ngFor="let product of products" class="bg-blue-950 rounded shadow-white shadow-sm">
-            <img [src]="product.image" alt="product.alt" class="w-full h-56 rounded shadow-yellow-300 shadow-sm">
-            <div class="pl-8 space-y-2 pb-4 shadow">
+            <img [src]="product.image" [alt]="product.alt" class="w-full h-56 rounded shadow-yellow-300 shadow-sm">
+            <div class="pl-8 space-y-2 py-2 shadow">
                 <h4 class="font-bold">{{ product.title }}</h4>
                 <p class="text-yellow-300">{{ product.price }}</p>
                 <button class="bg-yellow-600 text-black py-1 px-3 hover:bg-yellow-700 transition-none">
@@ -19,19 +19,18 @@
     </article>
 
     <!-- FAQ -->
-    <article class="grid grid-cols-1">
-        <div *ngFor="let faq of faqs">
-            <div>
-                <h2>
-                    {{ faq.question }}
-                    <span class="cursor-pointer" 
-                    [ngClass]="{'bi bi-minus':isExpanded, 'bi bi-plus':!isExpanded}"
-                    (click)="toggleExpanded()"></span>
-                </h2>
-                <p *ngIf="isExpanded">
-                    {{ faq.answer }}
-                </p>
-            </div>
+    <article class="flex">
+        <div *ngFor="let faq of faqs" 
+            class="flex flex-col shadow-sm shadow-gray-700 rounded">
+            <h2>
+                {{ faq.question }} 
+                <span class="cursor-pointer" 
+                [ngClass]="{'bi bi-minus':isExpanded, 'bi bi-plus':!isExpanded}"
+                (click)="toggleExpanded()"></span>
+            </h2>
+            <p *ngIf="isExpanded">
+                {{ faq.answer }}
+            </p>
         </div>
         <!-- image -->
         <div>

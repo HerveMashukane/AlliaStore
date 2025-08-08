@@ -6,24 +6,25 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.css'
+  styleUrl: './gallery.component.css',
 })
 export class GalleryComponent {
-  isExpanded: boolean = false;
+  isExpanded: any = null;
   products: any = [
-    {id: 1, image: '/assets/images/logo.jpeg', alt: 'product image', title: 'Bijoux elegant en or', price: '$1,400', textBtn: 'Voir'},
-    {id: 2, image: '/assets/images/allia.jpeg', alt: 'product image', title: 'Chainette en or', price: '$2.500', textBtn: 'Voir'},
-    {id: 3, image: '/assets/images/logo.jpeg', alt: 'product image', title: 'Bracelets', price: '$500', textBtn: 'Voir'},
-    {id: 4, image: '/assets/images/allia.jpeg', alt: 'product image', title: 'Sac a main', price: '$145', textBtn: 'Voir'},
-    {id: 5, image: '/assets/images/logo.jpeg', alt: 'product image', title: 'Perles', price: '$200', textBtn: 'Voir'},
-    {id: 6, image: '/assets/images/allia.jpeg', alt: 'product image', title: 'Sac au dos', price: '$150', textBtn: 'Voir'},
+    {
+      id: 1, image: '/assets/images/products/peignechauffant.jpeg', alt: 'product image', title: 'Peigne chauffant', price: '$1.400', textBtn: 'Voir'},
+    {id: 2, image: '/assets/images/products/Eau de parfum YARA et ASAD.jpeg', alt: 'product image', title: 'Eau de parfum YARA et ASAD', price: '$2.500', textBtn: 'Voir'},
+    {id: 3, image: '/assets/images/products/Gourde.jpeg', title: 'Gourde', price: '$500', textBtn: 'Voir'},
+    {id: 4, image: '/assets/images/products/Gourde isotherme.jpeg', alt: 'product image', title: 'Gourde isotherme', price: '$600', textBtn: 'Voir'},
+    {id: 5, image: '/assets/images/products/Lisseur à cheveux.jpeg', alt: 'product image', title: 'Lisseur à cheveux', price: '$2.500', textBtn: 'Voir'},
+    {id: 6, image: '/assets/images/products/Pinceaux de maquillage.jpeg', alt: 'product image', title: 'Pinceaux de maquillage', price: '$500', textBtn: 'Voir'},
+    {id: 7, image: '/assets/images/products/Sandales mixte en cuir.jpeg', alt: 'product image', title: 'Sandales mixte en cuir', price: '$400', textBtn: 'Voir'},
+    {id: 8, image: '/assets/images/products/Bijous en or.jpeg', alt: 'product image', title: 'Bijous en or', price: '$2.500', textBtn: 'Voir'},
   ]
-
   faqs: any = [
     { id: 1, 
       question: 'Comment puis-je vous envoyer mon panier?', 
       answer: 'Vous pouvez nous envoyer un lien vers votre panier ou une capture decran via nos canaux de communication, nous vous guiderons tout au long du processus',
-      isExpanded: false,
     },
     {id: 2, 
       question: 'Quels sont vos frais de service?', 
@@ -40,6 +41,6 @@ export class GalleryComponent {
   ]
 
   toggleExpanded() {
-    
+    this.isExpanded = !this.isExpanded;
   }
 }
