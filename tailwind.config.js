@@ -4,7 +4,11 @@
         "./src/**/*.{html,ts}",
       ],
       theme: {
-        extend: {},
+        extend: {
+          colors: {
+            alliayellow: '#f38a06',
+          }
+        },
       },
       plugins: [],
     }
