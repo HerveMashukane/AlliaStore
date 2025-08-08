@@ -7,6 +7,7 @@
         extend: {
           colors: {
             alliayellow: '#f38a06',
+            alliablue: '#0046ba',
           }
         },
       },
