@@ -1,33 +1,33 @@
 <main class="bg-black text-white">
-  <!-- Gallery Text Header -->
-  <div class="text-center px-6 md:px-24 py-12 space-y-4">
-    <h1 class="text-3xl md:text-4xl font-bold text-white">
-      Les produits ordinaires ne valent pas la peine d'être vécus
-    </h1>
-    <p class="text-alliayellow">
-      Découvrez nos produits ordinaires les plus raffinés, triés sur le volet.
-    </p>
-  </div>
-
-  <!-- Products -->
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-24 pb-16">
-    <div *ngFor="let product of products" loading class="bg-blue-950 rounded-lg shadow-md hover:shadow-yellow-400 transition duration-300">
-      <img [src]="product.image" [alt]="product.alt" class="w-full h-56 object-cover rounded-t-lg" />
-        <div class="p-4 space-y-2">
-            <h4 class="font-semibold text-lg">{{ product.title }}</h4>
-            <p class="text-alliayellow font-medium">{{ product.price }}</p>
-            <button class="bg-alliayellow text-white py-2 px-4 rounded hover:bg-amber-700 transition duration-300">
-                {{ product.textBtn }}
-            </button>
-        </div>
+    <!-- Gallery Text Header -->
+    <div class="text-center px-6 md:px-24 py-12 space-y-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-white">
+        Les produits ordinaires ne valent pas la peine d'être vécus
+        </h1>
+        <p class="text-alliayellow">
+        Découvrez nos produits ordinaires les plus raffinés, triés sur le volet.
+        </p>
     </div>
-  </section>
+
+    <!-- Products -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-24 pb-16">
+        <div *ngFor="let product of products" loading class="bg-blue-950 rounded-lg shadow-md hover:shadow-yellow-400 transition duration-300">
+            <img [src]="product.image" [alt]="product.alt" class="w-full h-56 object-cover rounded-t-lg"/>
+            <div class="p-4 space-y-2">
+                <h4 class="font-semibold text-lg">{{ product.title }}</h4>
+                <p class="text-alliayellow font-medium">{{ product.price }}</p>
+                <button class="bg-alliayellow text-white py-2 px-4 rounded hover:bg-amber-700 transition duration-300">
+                    {{ product.textBtn }}
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQ Section -->
     <section class="flex flex-col lg:flex-row justify-between items-start gap-12 px-6 md:px-24 pb-24">
         <!-- illustration Image -->
         <div class="w-full lg:w-[400px]">
-        <img src="/assets/images/allia.jpeg" alt="FAQ illustration" class="w-full h-auto rounded-lg shadow-xl shadow-white" />
+            <img src="/assets/images/allia.jpeg" alt="FAQ illustration" class="w-full h-96 rounded-lg shadow-xl shadow-white" />
         </div>
         <!-- FAQ List -->
         <div class="flex-1 space-y-6">
