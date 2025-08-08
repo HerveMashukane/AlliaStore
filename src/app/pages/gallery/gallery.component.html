@@ -11,7 +11,7 @@
 
   <!-- Products -->
   <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-24 pb-16">
-    <div *ngFor="let product of products" class="bg-blue-950 rounded-lg shadow-md hover:shadow-yellow-400 transition duration-300">
+    <div *ngFor="let product of products" loading class="bg-blue-950 rounded-lg shadow-md hover:shadow-yellow-400 transition duration-300">
       <img [src]="product.image" [alt]="product.alt" class="w-full h-56 object-cover rounded-t-lg" />
       <div class="p-4 space-y-2">
         <h4 class="font-semibold text-lg">{{ product.title }}</h4>
@@ -31,13 +31,12 @@
     </div>
     <!-- FAQ List -->
     <div class="flex-1 space-y-6">
-      <div *ngFor="let faq of faqs" class="bg-alliablue p-6 rounded shadow-md">
-        <h2 class="flex justify-between items-center text-lg font-semibold cursor-pointer"
-            (click)="toggleExpanded()">
+      <div *ngFor="let faq of faqs" class="bg-blue-950 p-6 rounded shadow-md">
+        <h2 class="flex justify-between items-center text-lg font-semibold cursor-pointer">
           {{ faq.question }}
-          <span [ngClass]="{ 'bi bi-minus': isExpanded, 'bi bi-plus': !isExpanded }" class="text-alliayellow text-xl"></span>
+          <span class="text-alliayellow text-xl"></span>
         </h2>
-        <p *ngIf="isExpanded" class="mt-2 text-gray-300">
+        <p class="mt-2 text-gray-300">
           {{ faq.answer }}
         </p>
       </div>

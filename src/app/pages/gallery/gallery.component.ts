@@ -39,8 +39,4 @@ export class GalleryComponent {
       answer: 'Envoyez-nous votre adresse via nos canaux de communication pour une reponse trop claire',
     },
   ]
-
-  toggleExpanded() {
-    this.isExpanded = !this.isExpanded;
-  }
 }

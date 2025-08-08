@@ -1,32 +1,35 @@
-<nav class="bg-gray-900 text-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
-    
-    <!-- Left Navigation Links -->
-    <div class="flex space-x-6 text-sm font-medium">
-      <a href="#" class="hover:text-amber-700 transition">ACCUEIL</a>
-      <a href="#" class="hover:text-amber-700 transition">QUI SOMMES-NOUS?</a>
-      <a href="#" class="hover:text-amber-700 transition">GALLERIE</a>
-    </div>
+<nav class="bg-gray-950 text-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-y-4">
 
-    <!-- Logo Centered on Small Screens, Inline on Large -->
-    <div class="my-4 md:my-0">
+    <!-- Logo Centered on Desktop -->
+    <div class="order-2 md:order-2 w-full md:w-auto flex justify-center md:justify-start">
       <a href="#">
         <img src="/assets/images/logo.jpeg" 
              alt="AlliaStore Logo" 
-             class="w-24 h-16 object-contain mx-auto md:mx-0 cursor-pointer rounded shadow" />
+             class="w-24 h-16 object-contain cursor-pointer rounded shadow-md" />
       </a>
     </div>
 
-    <!-- Right Navigation + Icons -->
-    <div class="flex items-center space-x-6 text-sm font-medium">
-      <a href="#" class="hover:text-amber-700 transition">BOUTIQUE</a>
-      <a href="#" class="hover:text-amber-700 transition">CONTACT</a>
-      <div class="flex items-center space-x-4 pl-2 border-l border-yellow-300">
-        <a href="#" title="Search">
-          <i class="bi bi-search hover:text-yellow-500 text-lg cursor-pointer"></i>
+    <!-- Left Links -->
+    <div class="order-1 md:order-1 flex flex-wrap justify-center md:justify-start space-x-6 text-sm font-medium text-gray-200">
+      <a href="#" class="hover:text-amber-600 transition">Accueil</a>
+      <a href="#" class="hover:text-amber-600 transition">A Propos</a>
+      <a href="#" class="hover:text-amber-600 transition">Produits</a>
+    </div>
+
+    <!-- Right Links & Icons -->
+    <div class="order-3 md:order-3 flex items-center space-x-6 text-sm font-medium">
+      <a href="#" class="hover:text-amber-600 transition">Contact</a>
+      <a href="#" class="hover:text-amber-600 transition">FAQs</a>
+      <a href="#" class="hover:bg-amber-600 hover:text-white text-amber-600 border border-amber-600 px-3 py-1 rounded transition">
+        Commander
+      </a>
+      <div class="flex items-center space-x-4 pl-4 border-l border-gray-700">
+        <a href="#" title="Rechercher">
+          <i class="bi bi-search hover:text-amber-600 text-lg cursor-pointer"></i>
         </a>
-        <a href="#" title="Cart">
-          <i class="bi bi-cart hover:text-amber-700 text-lg cursor-pointer"></i>
+        <a href="#" title="Panier">
+          <i class="bi bi-cart hover:text-amber-600 text-lg cursor-pointer"></i>
         </a>
       </div>
     </div>
