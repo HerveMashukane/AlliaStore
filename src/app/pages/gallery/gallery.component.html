@@ -31,13 +31,13 @@
         </div>
         <!-- FAQ List -->
         <div class="flex-1 space-y-6">
-            <div *ngFor="let faq of faqs" class="bg-blue-950 p-6 rounded shadow-md">
+            <div *ngFor="let faq of faqs; index as i" class="bg-blue-950 p-6 rounded shadow-md">
                 <h2 class="flex justify-between items-center text-lg font-semibold cursor-pointer">
                 {{ faq.question }}
-                <span (click)="toggleExpanded()" [ngClass]="{'bi bi-dash': isExpanded, 'bi bi-plus':!isExpanded}" class="text-alliayellow text-xl"></span>
+                <span (click)="toggleExpanded(i)" [ngClass]="{'bi bi-dash': expandedQuestion === i, 'bi bi-plus': expandedQuestion !== i}" class="text-white text-xl animate-pulse"></span>
                 </h2>
-                <p *ngIf="isExpanded" class="mt-2 text-gray-300">
-                {{ faq.answer }}
+                <p *ngIf="expandedQuestion === i" class="mt-2 text-gray-300">
+                    {{ faq.answer }}
                 </p>
             </div>
         </div>

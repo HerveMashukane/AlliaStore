@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './gallery.component.css',
 })
 export class GalleryComponent {
-  isExpanded: boolean = false;
   products: any = [
     {
       id: 1, image: '/assets/images/products/peignechauffant.jpeg', alt: 'product image', title: 'Peigne chauffant', price: '$1.400', textBtn: 'Voir'},
@@ -40,7 +39,10 @@ export class GalleryComponent {
     },
   ]
 
-  toggleExpanded() {
-    this.isExpanded = !this.isExpanded;
+  // faq expansion
+  expandedQuestion: number | null = null;
+
+  toggleExpanded(index: number) {
+    this.expandedQuestion = this.expandedQuestion === index ? null : index;
   }
 }
