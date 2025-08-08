@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './gallery.component.css',
 })
 export class GalleryComponent {
-  isExpanded: any = null;
+  isExpanded: boolean = false;
   products: any = [
     {
       id: 1, image: '/assets/images/products/peignechauffant.jpeg', alt: 'product image', title: 'Peigne chauffant', price: '$1.400', textBtn: 'Voir'},
@@ -39,4 +39,8 @@ export class GalleryComponent {
       answer: 'Envoyez-nous votre adresse via nos canaux de communication pour une reponse trop claire',
     },
   ]
+
+  toggleExpanded() {
+    this.isExpanded = !this.isExpanded;
+  }
 }
