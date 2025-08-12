@@ -17,7 +17,7 @@
                 <h4 class="font-semibold text-lg">{{ product.title }}</h4>
                 <p class="text-alliayellow font-medium">{{ product.price }}</p>
                 <button class="bg-alliayellow text-white py-2 px-4 rounded hover:bg-amber-700 transition duration-300">
-                    {{ product.textBtn }}
+                    {{ product.viewBtn }}
                 </button>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 {{ faq.question }}
                 <span (click)="toggleExpanded(i)" [ngClass]="{'bi bi-dash': expandedQuestion === i, 'bi bi-plus': expandedQuestion !== i}" class="text-alliayellow text-xl animate-pulse"></span>
                 </h2>
-                <p *ngIf="expandedQuestion === i" class="mt-2 text-gray-300">
+                <p *ngIf="expandedQuestion === i" class="mt-2 text-amber-200">
                     {{ faq.answer }}
                 </p>
             </div>

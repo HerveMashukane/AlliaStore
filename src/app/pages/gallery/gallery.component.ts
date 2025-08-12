@@ -39,7 +39,7 @@ export class GalleryComponent {
     },
   ]
 
-  // faq expansion
+  // FAQ expansion
   expandedQuestion: number | null = null;
 
   toggleExpanded(index: number) {
