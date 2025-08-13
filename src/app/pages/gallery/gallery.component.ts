@@ -12,7 +12,7 @@ export class GalleryComponent {
   products: any = [
     {
       id: 1, image: '/assets/images/products/peignechauffant.jpeg', alt: 'product image', title: 'Peigne chauffant', price: '$1.400', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 2, image: '/assets/images/products/Eau de parfum YARA et ASAD.jpeg', alt: 'product image', title: 'Eau de parfum YARA et ASAD', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 2, image: '/assets/images/products/Eau de parfum YARA et ASAD.jpeg', alt: 'product image', title: 'Eau parfum YARA & ASAD', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
     {id: 3, image: '/assets/images/products/Gourde.jpeg', title: 'Gourde', price: '$500', viewBtn: 'Voir', commandBtn: 'commander'},
     {id: 4, image: '/assets/images/products/Gourde isotherme.jpeg', alt: 'product image', title: 'Gourde isotherme', price: '$600', viewBtn: 'Voir', commandBtn: 'commander'},
     {id: 5, image: '/assets/images/products/Lisseur à cheveux.jpeg', alt: 'product image', title: 'Lisseur à cheveux', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
