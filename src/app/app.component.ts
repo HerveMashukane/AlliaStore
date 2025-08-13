@@ -16,7 +16,7 @@ import { FaqsComponent } from "./pages/faqs/faqs.component";
     GalleryComponent,
     FaqsComponent,
     FooterComponent,
-],
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

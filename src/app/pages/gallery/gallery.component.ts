@@ -20,29 +20,5 @@ export class GalleryComponent {
     {id: 7, image: '/assets/images/products/Sandales mixte en cuir.jpeg', alt: 'product image', title: 'Sandales mixte en cuir', price: '$400', viewBtn: 'Voir', commandBtn: 'commander'},
     {id: 8, image: '/assets/images/products/Bijous en or.jpeg', alt: 'product image', title: 'Bijous en or', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
   ]
-  faqs: any = [
-    { id: 1, 
-      question: 'Comment puis-je vous envoyer mon panier?', 
-      answer: 'Vous pouvez nous envoyer un lien vers votre panier ou une capture decran via nos canaux de communication, nous vous guiderons tout au long du processus',
-    },
-    {id: 2, 
-      question: 'Quels sont vos frais de service?', 
-      answer: 'On applique aucun frais de service',
-    },
-    {id: 3, 
-      question: 'Vers quels pays livrez-vous?', 
-      answer: 'nous livrons partout en RDC',
-    },
-    {id: 3, 
-      question: 'Quand pourriez-vous commencer des livraisons ici chez nous?', 
-      answer: 'Envoyez-nous votre adresse via nos canaux de communication pour une reponse trop claire',
-    },
-  ]
-
-  // FAQ expansion
-  expandedQuestion: number | null = null;
-
-  toggleExpanded(index: number) {
-    this.expandedQuestion = this.expandedQuestion === index ? null : index;
-  }
+  
 }
