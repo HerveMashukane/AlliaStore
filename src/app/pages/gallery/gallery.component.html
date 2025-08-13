@@ -16,9 +16,15 @@
             <div class="p-4 space-y-2">
                 <h4 class="font-semibold text-lg">{{ product.title }}</h4>
                 <p class="text-alliayellow font-medium">{{ product.price }}</p>
-                <button class="bg-alliayellow text-white py-2 px-4 rounded hover:bg-amber-700 transition duration-300">
-                    {{ product.viewBtn }}
-                </button>
+                <!-- buttons -->
+                <div class="flex flex-col space-y-2 md:flex-row md:space-x-2">
+                    <button class="bg-alliayellow text-white py-1 px-2 rounded hover:bg-amber-700 transition duration-300">
+                        <i class="bi bi-eye-fill text-amber-800"></i> {{ product.viewBtn }}
+                    </button>
+                    <button class="bg-alliayellow text-white py-1 px-2 rounded hover:bg-amber-700 transition duration-300">
+                        <i class="bi bi-cart text-amber-800"></i> {{ product.commandBtn }}
+                    </button>
+                </div>
             </div>
         </div>
     </section>
