@@ -4,6 +4,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { HomePageComponent } from "./pages/home-page/home-page.component";
 import { GalleryComponent } from "./pages/gallery/gallery.component";
 import { FooterComponent } from "./pages/footer/footer.component";
+import { FaqsComponent } from "./pages/faqs/faqs.component";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { FooterComponent } from "./pages/footer/footer.component";
     NavbarComponent,
     HomePageComponent,
     GalleryComponent,
+    FaqsComponent,
     FooterComponent,
 ],
   templateUrl: './app.component.html',
