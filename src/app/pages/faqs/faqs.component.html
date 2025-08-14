@@ -6,12 +6,12 @@
     </div>
         <!-- FAQ List -->
     <div class="flex-1 space-y-6">
-        <div *ngFor="let faq of faqs" class="bg-blue-950 p-6 rounded shadow-md">
-             <h2 class="flex justify-between items-center text-lg font-semibold cursor-pointer">
+        <div *ngFor="let faq of faqs; index as i" class="bg-blue-950 p-6 rounded shadow-md">
+             <h2 (click)="toggleExpanded(i)" class="flex justify-between items-center text-lg font-semibold cursor-pointer">
                 {{ faq.question }}
-                <span [ngClass]="{'bi bi-dash': expandedQuestion, 'bi bi-plus': expandedQuestion}" class="text-alliayellow text-xl animate-pulse"></span>
+                <span [ngClass]="{'bi bi-dash': expandedQuestion === i, 'bi bi-plus': expandedQuestion !== i}" class="text-alliayellow text-xl animate-pulse"></span>
             </h2>
-            <p *ngIf="expandedQuestion" class="mt-2 text-amber-200">
+            <p *ngIf="expandedQuestion === i" class="mt-2 text-amber-200">
                 {{ faq.answer }}
             </p>
         </div>

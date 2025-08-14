@@ -20,14 +20,18 @@ export class FaqsComponent {
     },
     {id: 3, 
       question: 'Vers quels pays livrez-vous?', 
-      answer: 'nous livrons partout en RDC',
+      answer: 'Nous livrons partout en RDC',
     },
-    {id: 3, 
-      question: 'Quand pourriez-vous commencer des livraisons ici chez nous?', 
+    {id: 4, 
+      question: 'Quand pourriez-vous commencer des livraisons ici chez nous?',
       answer: 'Envoyez-nous votre adresse via nos canaux de communication pour une reponse trop claire',
     },
   ]
 
   // FAQ Expansion
-  expandedQuestion: boolean = false;
+  expandedQuestion: number | null = null;
+
+  toggleExpanded(index: number) {
+    this.expandedQuestion = this.expandedQuestion === index ? null : index;
+  }
 }
