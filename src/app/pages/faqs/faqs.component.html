@@ -1,19 +1,19 @@
 <!-- FAQ Section -->
-    <section class="flex flex-col lg:flex-row justify-between items-start gap-12 px-6 md:px-24 pb-24">
-        <!-- illustration Image -->
-        <div class="w-full lg:w-[400px]">
-            <img src="/assets/images/allia.jpeg" alt="FAQ illustration" class="w-full h-auto rounded-lg shadow-xl shadow-white"/>
-        </div>
+<section class="flex flex-col lg:flex-row justify-between items-start gap-12 px-6 md:px-24 pb-24">
+    <!-- illustration Image -->
+    <div class="w-full lg:w-[400px]">
+        <img src="/assets/images/allia.jpeg" alt="FAQ illustration" class="w-full h-auto rounded-lg shadow-xl shadow-white"/>
+    </div>
         <!-- FAQ List -->
-        <div class="flex-1 space-y-6">
-            <div *ngFor="let faq of faqs; index as i" class="bg-blue-950 p-6 rounded shadow-md">
-                <h2 class="flex justify-between items-center text-lg font-semibold cursor-pointer">
+    <div class="flex-1 space-y-6">
+        <div *ngFor="let faq of faqs" class="bg-blue-950 p-6 rounded shadow-md">
+             <h2 class="flex justify-between items-center text-lg font-semibold cursor-pointer">
                 {{ faq.question }}
-                <span (click)="toggleExpanded(i)" [ngClass]="{'bi bi-dash': expandedQuestion === i, 'bi bi-plus': expandedQuestion !== i}" class="text-alliayellow text-xl animate-pulse"></span>
-                </h2>
-                <p *ngIf="expandedQuestion === i" class="mt-2 text-amber-200">
-                    {{ faq.answer }}
-                </p>
-            </div>
+                <span [ngClass]="{'bi bi-dash': expandedQuestion, 'bi bi-plus': expandedQuestion}" class="text-alliayellow text-xl animate-pulse"></span>
+            </h2>
+            <p *ngIf="expandedQuestion" class="mt-2 text-amber-200">
+                {{ faq.answer }}
+            </p>
         </div>
-    </section>
+    </div>
+</section>

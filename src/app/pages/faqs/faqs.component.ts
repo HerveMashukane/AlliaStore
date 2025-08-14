@@ -29,9 +29,5 @@ export class FaqsComponent {
   ]
 
   // FAQ Expansion
-  expandedQuestion: number | null = null;
-
-  toggleExpanded(index: number) {
-    this.expandedQuestion = this.expandedQuestion === index ? null : index;
-  }
+  expandedQuestion: boolean = false;
 }
