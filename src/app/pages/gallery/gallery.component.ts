@@ -11,14 +11,14 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
   products: any = [
     {
-      id: 1, image: '/assets/images/products/peignechauffant.jpeg', alt: 'product image', title: 'Peigne chauffant', price: '$1.400', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 2, image: '/assets/images/products/Eau de parfum YARA et ASAD.jpeg', alt: 'product image', title: 'Eau parfum YARA & ASAD', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 3, image: '/assets/images/products/Gourde.jpeg', title: 'Gourde', price: '$500', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 4, image: '/assets/images/products/Gourde isotherme.jpeg', alt: 'product image', title: 'Gourde isotherme', price: '$600', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 5, image: '/assets/images/products/Lisseur à cheveux.jpeg', alt: 'product image', title: 'Lisseur à cheveux', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 6, image: '/assets/images/products/Pinceaux de maquillage.jpeg', alt: 'product image', title: 'Pinceaux de maquillage', price: '$500', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 7, image: '/assets/images/products/Sandales mixte en cuir.jpeg', alt: 'product image', title: 'Sandales mixte en cuir', price: '$400', viewBtn: 'Voir', commandBtn: 'commander'},
-    {id: 8, image: '/assets/images/products/Bijous en or.jpeg', alt: 'product image', title: 'Bijous en or', price: '$2.500', viewBtn: 'Voir', commandBtn: 'commander'},
+      id: 1, image: '/assets/images/products/peignechauffant.jpeg', alt: 'product image', title: 'Peigne chauffant', price: '$20', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 2, image: '/assets/images/products/Eau de parfum YARA et ASAD.jpeg', alt: 'product image', title: 'Eau parfum YARA & ASAD', price: '$15', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 3, image: '/assets/images/products/Gourde.jpeg', title: 'Gourde', price: '$5', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 4, image: '/assets/images/products/Gourde isotherme.jpeg', alt: 'product image', title: 'Gourde isotherme', price: '$10', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 5, image: '/assets/images/products/Lisseur à cheveux.jpeg', alt: 'product image', title: 'Lisseur à cheveux', price: '$25', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 6, image: '/assets/images/products/Pinceaux de maquillage.jpeg', alt: 'product image', title: 'Pinceaux de maquillage', price: '$5', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 7, image: '/assets/images/products/Sandales mixte en cuir.jpeg', alt: 'product image', title: 'Sandales mixte en cuir', price: '$15', viewBtn: 'Voir', commandBtn: 'commander'},
+    {id: 8, image: '/assets/images/products/Bijous en or.jpeg', alt: 'product image', title: "Boucles d'oreil", price: "$5", viewBtn: 'Voir', commandBtn: 'commander'},
   ]
   
 }
